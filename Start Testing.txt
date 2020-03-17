@@ -1,1 +1,137 @@
-Nikhil Saini
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 ~
+$ cd
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 ~
+$ cd /e
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e
+$ ls
+'!qhlogs.doc'          Development/          Softwares/                    Wallpapers/
+'$RECYCLE.BIN'/       'Nexa Dealer Build'/  'System Volume Information'/
+ cfrbackup-UXGRKHRM/   Nikhil/               video/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e
+$ cd Nikhil/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil
+$ ls
+ DataBase/   Help/  'Nexa DataBase.txt'  'Nexa Url.txt'   PickDrop/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil
+$ cd Help/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help
+$ ls
+Git/  Ken/  Ken-20200316T091637Z-001.zip
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help
+$ cd Git/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ ls
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ git config --global user.name "NikArthur"
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ git config --global user.email nikhilsaini5748@gmail.com
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ git clone https://github.com/NikArthur/Demo.git
+Cloning into 'Demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 606 bytes | 3.00 KiB/s, done.
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ ls
+Demo/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git
+$ cd Demo/
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ ls
+README.md
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ ls
+ README.md  'Start Testing.txt'
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ git add 'Start Testing.txt'
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Start Testing.txt
+
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ git commit -m "First Commit" 'Start Testing.txt'
+[master f8273f8] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Start Testing.txt
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 302.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/NikArthur/Demo.git
+   523b72a..f8273f8  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+AGL@AGL-DEV-NIKHIL-L MINGW64 /e/Nikhil/Help/Git/Demo (master)
+$
+
+
+
+
+
+
+
+
+#######################################################
+#######################################################
+
+
+
+
+ls
+cd
+git init
+git remote add origin [gitLink]
+git remote -v
+git add .
+git commit -m "First commit"
+git push origin master
+
+ls- List all the files in the current directory
+
+If your source code is in the different directory, you need to change the directory on git bash with command cd followed by directory or path.
+
+cd - To change the directory
+
+git init- This command initializes the git in the given path. You can see the .git hidden files after this command gets executed.
+
+git remote add origin [gitLink]- gitLink denote the place where your code is stored in the remote repository
+
+git add .- Add all the files in the local directory to the remote repository
+
+git commit -m "First commit"- It establishes a connection with local repository
+
+git push origin master- It establishes a connection with a remote repository and upload your source code or files to GitHub
+
+Note: If you get fatal: remote origin already exists which means the connection is already established.
+
+Above method helps to push files or project folder to GitHub using the command line.
